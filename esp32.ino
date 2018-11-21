@@ -29,12 +29,10 @@ bool stringComplete = false;  // whether the string is complete
 
 /*****************************************************************/
 // EDIT: Change the 'ssid' and 'password' to match your network
-//char ssid[] = "ASUS_TIONG_2.4G";  // wireless network name
-//char password[] = "tiong67466333"; // wireless password
-char ssid[] = "zc";  // wireless network name
-char password[] = "lightrojan124"; // wireless password
+char ssid[] = "xxxx";  // wireless network name
+char password[] = "xxxx"; // wireless password
 // EDIT: 'Server' address to match your domain
-char server[] = "18.191.104.220"; // This could also be 192.168.1.18/~me if you are running a server on your computer on a local network.
+char server[] = "xx.xx.xxx.xxx"; // This could also be 192.168.1.18/~me if you are running a server on your computer on a local network.
 String yourdatacolumn = "value="; //change according to column name set in database
 /*****************************************************************/
 void setup() {
@@ -161,11 +159,11 @@ void postData() {
   if (client.connect(server, 80)) {
     Serial.println("connecting...");
 
-    // EDIT: The POST 'URL' to the location of your insert_mysql.php on your web-host
-    client.println("POST /mysql_connect.php HTTP/1.1");
+    // EDIT: The POST 'URL' to the location of your insert script "xxx.php" on your web-host
+    client.println("POST /xxx.php HTTP/1.1");
 
     // EDIT: 'Host' to match your domain
-    client.println("Host: 18.191.104.220");
+    client.println("Host: xx.xxx.xxx.xxx");
     client.println("User-Agent: Arduino/1.0");
     client.println("Connection: close");
     client.println("Content-Type: application/x-www-form-urlencoded;");
