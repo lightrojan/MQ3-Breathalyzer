@@ -1,9 +1,9 @@
 <?php
 
-$servername = "18.191.104.220";
-$username = "root";
-$password = "root";
-$dbname = "mddbac";
+$servername = "xx.xxx.xxx.xxx";
+$username = "xxx";
+$password = "xxx";
+$dbname = "xxx";
 $temp1=$_POST["yourdata"];
 
 // Create connection
@@ -13,7 +13,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "INSERT INTO breath_readings (yourdata)
+$sql = "INSERT INTO xxxxx (yourdata)
 VALUES ('$temp1')";
 
 if ($conn->query($sql) === TRUE) {
